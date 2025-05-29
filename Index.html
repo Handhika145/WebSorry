@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maaf Untukmu, Sayang ❤️</title>
+    <meta
+      name="description"
+      content="Situs permintaan maaf yang tulus dari hati untuk kekasih tersayang dengan pesan romantis dan penuh cinta."
+    />
+    <link href="style.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Framer Motion CDN -->
+    <script src="https://unpkg.com/framer-motion@11/dist/framer-motion.js"></script>
+
+    <style></style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <!-- Floating Hearts -->
+      <div class="floating-hearts">💖</div>
+      <div class="floating-hearts">💕</div>
+      <div class="floating-hearts">💖</div>
+      <div class="floating-hearts">💕</div>
+
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="hero.jpg" alt="Romantic couple" />
+        </div>
+        <div style="font-size: 4rem; margin-bottom: 30px">💕</div>
+
+        <h1 class="hero-title font-dancing">Maaf Untukmu, Sayang</h1>
+        <p class="hero-subtitle">
+          Ada yang ingin aku sampaikan dari lubuk hati terdalam...
+        </p>
+
+        <button class="hero-button" onclick="scrollToApology()">
+          Baca Pesanku ❤️
+        </button>
+      </div>
+    </section>
+
+    <!-- Apology Section -->
+    <section id="apology-section" class="apology-section">
+      <div class="container">
+        <div class="apology-card">
+          <h2 class="apology-title font-dancing">Dari Hati yang Tulus</h2>
+          <div class="apology-divider"></div>
+
+          <p class="apology-text">
+            <span
+              class="font-dancing"
+              style="font-size: 1.5rem; color: var(--deep-rose)"
+              >Sayang,</span
+            ><br /><br />
+            Aku tahu aku telah melakukan kesalahan yang menyakiti hatimu.
+            Kata-kata tak akan pernah cukup untuk mengungkapkan betapa
+            menyesalnya aku atas semua yang terjadi.
+          </p>
+
+          <p class="apology-text">
+            Aku sadar bahwa kepercayaan adalah hal yang paling berharga dalam
+            hubungan kita, dan aku telah mengecewakan kepercayaan itu. Tapi
+            percayalah, cintaku padamu tidak pernah berubah sedikitpun.
+          </p>
+
+          <div class="apology-highlight">
+            <p>
+              "Maafkan aku, sayang. Aku berjanji akan menjadi orang yang lebih
+              baik untukmu, untuk kita."
+            </p>
+          </div>
+
+          <p class="apology-text">
+            Aku tidak meminta mu untuk langsung memaafkan, tapi berikanlah aku
+            kesempatan untuk membuktikan bahwa aku benar-benar menyesal dan
+            ingin memperbaiki semuanya. Kita sudah melewati banyak hal bersama,
+            dan aku tidak ingin kehilangan mu.
+          </p>
+
+          <div class="apology-signature">
+            <p class="love-text font-dancing">Aku mencintaimu ❤️</p>
+            <p class="signature">
+              Dengan segenap cinta dan penyesalan,<br />
+              <strong>Kekasihmu yang menyesal</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Section -->
+    <section class="interactive-section">
+      <div class="container">
+        <h3 class="interactive-title font-dancing">Untukmu, Cinta ❤️</h3>
+
+        <div class="promises-grid">
+          <div class="promise-card">
+            <div class="promise-icon">🌹</div>
+            <h4 class="promise-title">Janji Setia</h4>
+            <p class="promise-text">
+              Aku berjanji akan selalu setia dan tidak akan mengulangi kesalahan
+              yang sama
+            </p>
+          </div>
+
+          <div class="promise-card">
+            <div class="promise-icon">💕</div>
+            <h4 class="promise-title">Cinta Sejati</h4>
+            <p class="promise-text">
+              Cintaku padamu akan selalu abadi, tidak ada yang bisa menggantikan
+              posisimu
+            </p>
+          </div>
+
+          <div class="promise-card">
+            <div class="promise-icon">🤝</div>
+            <h4 class="promise-title">Komitmen Baru</h4>
+            <p class="promise-text">
+              Mari kita mulai lembaran baru dengan komitmen yang lebih kuat dari
+              sebelumnya
+            </p>
+          </div>
+        </div>
+
+        <div class="final-message">
+          <p>
+            Aku tahu jalan untuk mendapatkan kepercayaanmu kembali tidak akan
+            mudah, tapi aku siap untuk melakukan apapun demi kita.
+          </p>
+
+          <div class="final-badges">
+            <div class="final-badge">💌 Pesanku Untukmu</div>
+            <div class="final-text">Dengan cinta yang tulus ❤️</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-heart">💕</div>
+        <p class="footer-text">
+          Dibuat dengan segenap cinta dan penyesalan yang tulus
+        </p>
+        <p class="footer-quote">
+          "Cinta sejati adalah tentang memaafkan dan memberikan kesempatan
+          kedua"
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function scrollToApology() {
+        document.getElementById("apology-section").scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+
+      // Add some interactive effects
+      document.addEventListener("DOMContentLoaded", function () {
+        // Animate cards on scroll
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.animationDelay = "0s";
+              entry.target.style.animationPlayState = "running";
+            }
+          });
+        }, observerOptions);
+
+        // Observe all promise cards
+        document.querySelectorAll(".promise-card").forEach((card) => {
+          observer.observe(card);
+        });
+      });
+    </script>
+  </body>
+</html>
